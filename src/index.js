@@ -54,9 +54,7 @@ export const createUploadLink = ({
       // https://github.com/jaydenseric/graphql-multipart-request-spec
       options.body = new FormData()
       options.body.append('operations', payload)
-      files.forEach(({ file }) =>
-        options.body.append(file.path, file)
-      )
+      files.forEach(({ file }) => options.body.append(file.path, file))
     } else options.body = payload
 
     return new Observable(observer => {
