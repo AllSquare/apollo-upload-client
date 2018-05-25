@@ -14,7 +14,7 @@ The sole purpose of this package is to allow an `apollo-client` v2 to communicat
 
 > This package has been modified to mimic client requests of `apollo-upload-client` version `^5.1.1`, while keeping `apollo-client` v2 compatibility.
 
-Now I've said it 3 times, I hope that's clear enough. If you intented to indeed use this client to work with older servers, feel free to grab version `8.0.1` and see the magic happen!
+Now I've said it 3 times, I hope that's clear enough. If you intented to indeed use this client to work with older servers, feel free to grab version `8.0.2` and see the magic happen!
 
 ## Setup
 
