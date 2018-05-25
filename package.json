@@ -59,7 +59,7 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && mkdir -p lib",
     "build": "run-p build:*",
     "build:main": "babel src -d lib/main",
     "build:module": "cross-env MODULE=true babel src -d lib/module",
