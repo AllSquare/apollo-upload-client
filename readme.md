@@ -6,6 +6,16 @@
 
 Enhances [Apollo](https://apollographql.com) for intuitive file uploads via GraphQL queries or mutations. Use with a [GraphQL multipart request spec server implementation](https://github.com/jaydenseric/graphql-multipart-request-spec#server) such as [apollo-upload-server](https://github.com/jaydenseric/apollo-upload-server).
 
+## IMPORTANT NOTICE
+
+This package has been modified to work with older versions of [apollo-upload-server](https://github.com/jaydenseric/apollo-upload-server), but still retain compatibility with `apollo-client` > 2.0.
+
+The sole purpose of this package is to allow an `apollo-client` v2 to communicate with a GraphQL backed that was built to work with earlier versions of `apollo-upload-client`, that are not compatible with `apollo-client` v2.
+
+> This package has been modified to mimic client requests of `apollo-upload-client` version `^5.1.1`, while keeping `apollo-client` v2 compatibility.
+
+Now I've said it 3 times, I hope that's clear enough. If you intented to indeed use this client to work with older servers, feel free to grab version `8.0.1` and see the magic happen!
+
 ## Setup
 
 Install with peer dependencies using [npm](https://npmjs.com):
